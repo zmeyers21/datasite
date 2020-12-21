@@ -1,0 +1,14 @@
+[
+  "id",
+  "firstName",
+  "lastName",
+  "city",
+  "state",
+  "zipCode",
+  "country",
+  "company",
+  "organizationType",
+  "phone",
+  "disclaimerAccepted",
+  "languageCode"
+]

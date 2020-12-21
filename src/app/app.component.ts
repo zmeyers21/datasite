@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'datasite';
+  title = 'data-site';
+  constructor(private router: Router) { }
+
+  navigate(action: string) {
+    this.router.navigate([action]);
+  }
 }

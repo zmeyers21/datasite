@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'datasite'`, () => {
+  it(`should have as title 'leila-meyers'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('datasite');
+    expect(app.title).toEqual('leila-meyers');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('datasite app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('leila-meyers app is running!');
   });
 });

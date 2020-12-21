@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  // flex-grow all direct children (except router-outlet and iframe)
+  & > ::ng-deep *:not(router-outlet):not(iframe) {
+      flex: 1 0 auto;
+  }
+
+}
