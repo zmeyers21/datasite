@@ -15,6 +15,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  - The `Remove` button will simply remove the user from the store
  - `Details` should open the `User Details` panel to the right, where you can view the user details, or remove the user
  - Removing the user through the details panel should also propogate the update to the registered users list on the left
+ - To add a user, simply click the `Add User` button on the bottom left. This should open the `Add User` panel on the left with a simple button labeled `Create Dummy User`
+ - This button just generates a user with a random `Id` value, and adds it to the list on the left
 
 ## Development server
 
