@@ -4,8 +4,6 @@ import { RouterOutletComponent } from './components/router-outlet/router-outlet.
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
-
-
 @NgModule({
   imports: [
     CommonModule,

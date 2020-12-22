@@ -1,0 +1,10 @@
+<div class="container">
+
+  <span class="field">
+    {{ user.firstName }} {{user.lastName}}
+  </span>
+
+  <button (click)="details(user.id)">Details</button>
+  <button (click)=remove.emit(user.id)>Remove</button>
+
+</div>

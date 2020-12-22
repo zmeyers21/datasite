@@ -1,0 +1,69 @@
+<div class="container">
+
+  <table *ngIf="user">
+    
+    <tr>
+      <td>ID:</td>
+      <td>{{ user.id }}</td>
+    </tr>
+
+    <tr>
+      <td>First Name:</td>
+      <td>{{ user.firstName }}</td>
+    </tr>
+    
+    <tr>
+      <td>Last Name:</td>
+      <td>{{ user.lastName }}</td>
+    </tr>
+    
+    <tr>
+      <td>City:</td>
+      <td>{{ user.city }}</td>
+    </tr>
+    
+    <tr>
+      <td>State:</td>
+      <td>{{ user.state }}</td>
+    </tr>
+    
+    <tr>
+      <td>Zip Code:</td>
+      <td>{{ user.zipCode }}</td>
+    </tr>
+    
+    <tr>
+      <td>Country:</td>
+      <td>{{ user.country }}</td>
+    </tr>
+    
+    <tr>
+      <td>Company:</td>
+      <td>{{ user.company }}</td>
+    </tr>
+    
+    <tr>
+      <td>Organization Type:</td>
+      <td>{{ user.organizationType }}</td>
+    </tr>
+    
+    <tr>
+      <td>Phone:</td>
+      <td>{{ user.phone }}</td>
+    </tr>
+    
+    <tr>
+      <td>Disclaimer Accepted:</td>
+      <td>{{ user.disclaimerAccepted }}</td>
+    </tr>
+    
+    <tr>
+      <td>Language Code:</td>
+      <td>{{ user.languageCode }}</td>
+    </tr>
+
+  </table>
+
+  <button (click)="removeUser()">Remove User</button>
+
+</div>

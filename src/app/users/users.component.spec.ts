@@ -1,4 +1,6 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { SharedModule } from '../shared/shared.module';
 
 import { UsersComponent } from './users.component';
 
@@ -8,7 +10,12 @@ describe('UsersComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UsersComponent ]
+      declarations: [ UsersComponent ],
+      imports: [
+        HttpClientTestingModule,
+        SharedModule
+      ],
+      providers: []
     })
     .compileComponents();
   }));
@@ -21,5 +28,14 @@ describe('UsersComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should switch context', () => {
+    component.switchContext('details');
+    expect(component.context).toEqual('details');
+  });
+
+  afterAll(() => {
+    TestBed.resetTestingModule();
   });
 });
