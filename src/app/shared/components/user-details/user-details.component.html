@@ -1,69 +1,79 @@
 <div class="container">
 
   <table *ngIf="user">
+
+    <tr>
+      <td colspan="2" class="center">
+        <h2>User Details</h2>
+      </td>
+    </tr>
     
     <tr>
-      <td>ID:</td>
-      <td>{{ user.id }}</td>
+      <td class="title">ID:</td>
+      <td class="value">{{ user.id }}</td>
     </tr>
 
     <tr>
-      <td>First Name:</td>
-      <td>{{ user.firstName }}</td>
+      <td class="title">First Name:</td>
+      <td class="value">{{ user.firstName }}</td>
     </tr>
     
     <tr>
-      <td>Last Name:</td>
-      <td>{{ user.lastName }}</td>
+      <td class="title">Last Name:</td>
+      <td class="value">{{ user.lastName }}</td>
     </tr>
     
     <tr>
-      <td>City:</td>
-      <td>{{ user.city }}</td>
+      <td class="title">City:</td>
+      <td class="value">{{ user.city }}</td>
     </tr>
     
     <tr>
-      <td>State:</td>
-      <td>{{ user.state }}</td>
+      <td class="title">State:</td>
+      <td class="value">{{ user.state }}</td>
     </tr>
     
     <tr>
-      <td>Zip Code:</td>
-      <td>{{ user.zipCode }}</td>
+      <td class="title">Zip Code:</td>
+      <td class="value">{{ user.zipCode }}</td>
     </tr>
     
     <tr>
-      <td>Country:</td>
-      <td>{{ user.country }}</td>
+      <td class="title">Country:</td>
+      <td class="value">{{ user.country }}</td>
     </tr>
     
     <tr>
-      <td>Company:</td>
-      <td>{{ user.company }}</td>
+      <td class="title">Company:</td>
+      <td class="value">{{ user.company }}</td>
     </tr>
     
     <tr>
-      <td>Organization Type:</td>
-      <td>{{ user.organizationType }}</td>
+      <td class="title">Organization Type:</td>
+      <td class="value">{{ user.organizationType }}</td>
     </tr>
     
     <tr>
-      <td>Phone:</td>
-      <td>{{ user.phone }}</td>
+      <td class="title">Phone:</td>
+      <td class="value">{{ user.phone }}</td>
     </tr>
     
     <tr>
-      <td>Disclaimer Accepted:</td>
-      <td>{{ user.disclaimerAccepted }}</td>
+      <td class="title">Disclaimer Accepted:</td>
+      <td class="value">{{ user.disclaimerAccepted }}</td>
     </tr>
     
     <tr>
-      <td>Language Code:</td>
-      <td>{{ user.languageCode }}</td>
+      <td class="title">Language Code:</td>
+      <td class="value">{{ user.languageCode }}</td>
+    </tr>
+    
+    <tr>
+      <td colspan="2" class="center">
+        <button (click)="removeUser()">Remove User</button>
+      </td>
     </tr>
 
   </table>
-
-  <button (click)="removeUser()">Remove User</button>
 
 </div>
