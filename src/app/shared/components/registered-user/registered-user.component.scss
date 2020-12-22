@@ -1,11 +1,13 @@
+@import '~@angular/material/theming';
 .container {
   width: 100%;
   padding: 5px 0;
+  margin: 0 auto;
 }
 
 span {
   display: inline-block;
-  min-width: 200px;
+  min-width: 230px;
 }
 
 button {

@@ -1,3 +1,5 @@
+@import '~@angular/material/theming';
+
 .container {
   width: 100%;
   display: flex;
@@ -6,5 +8,34 @@
 }
 
 .box {
-  width: 50%;
+  background-color: #f7f7f7;
+  width: 420px;
+  height: 820px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  @include mat-elevation(6);
 }
+
+.header-box {
+  width: 100%;
+  text-align: center;
+}
+
+.item-tray {
+  height: 700px;
+  width: 100%;
+  overflow: auto;
+}
+
+.btn-box {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+// .add-btn {
+//   width: 100px;
+//   height: 20px;
+//   margin-top: 10px;
+// }

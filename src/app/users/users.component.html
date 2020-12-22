@@ -2,15 +2,21 @@
 
   <div class="box">
 
-    <h2>Registered Users</h2>
+    <div class="header-box">
+      <h2>Registered Users</h2>
+    </div>
     
-    <app-registered-user
-      *ngFor="let user of dataStore.registeredUsers$ | async; trackBy: trackByFn"
-      [user]="user"
-      (remove)="dataStore.removeRegisteredUser($event)">
-    </app-registered-user>
+    <div class="item-tray">
+      <app-registered-user
+        *ngFor="let user of dataStore.registeredUsers$ | async; trackBy: trackByFn"
+        [user]="user"
+        (remove)="dataStore.removeRegisteredUser($event)">
+      </app-registered-user>
+    </div>
 
-    <button (click)="switchContext('addUser')">Add User</button>
+    <div class="btn-box">
+      <button mat-raised-button color="primary" (click)="switchContext('addUser')" class="add-btn">Add User</button>
+    </div>
 
   </div>
 
