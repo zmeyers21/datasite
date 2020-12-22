@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
  - Run the command `git clone https://github.com/zmeyers21/datasite.git` to get started
  - Run `npm i` to install the needed dependencies
+
+## Development server
+
+Run `ng serve` for a dev server, and navigate to `http://localhost:4200/`. Or, alternatively, run `npm run open` and a browser should open for you.
  
 ## Navigating the application
 
@@ -17,10 +21,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  - Removing the user through the details panel should also propogate the update to the registered users list on the left
  - To add a user, simply click the `Add User` button on the bottom left. This should open the `Add User` panel on the left with a simple button labeled `Create Dummy User`
  - This button just generates a user with a random `Id` value, and adds it to the list on the left
-
-## Development server
-
-Run `ng serve` for a dev server, and navigate to `http://localhost:4200/`. Or, alternatively, run `npm run open` and a browser should open for you.
 
 ## Running unit tests
 
