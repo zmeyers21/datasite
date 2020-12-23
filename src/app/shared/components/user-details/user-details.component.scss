@@ -1,3 +1,7 @@
+.box {
+  height: 800px;
+}
+
 td {
   padding: 5px;
 }
@@ -7,10 +11,12 @@ td {
 }
 
 .title {
+  width: 50%;
   text-align: right;
   font: 600 14px Arial;
 }
 
 .value {
+  width: 50%;
   text-align: left;
 }

@@ -23,12 +23,19 @@
   <div class="box">
 
     <div *ngIf="context === 'addUser'">
-      <h2>Add User</h2>
+
+      <div class="header-box">
+        <h2>Add User</h2>
+      </div>
+
       <app-add-user></app-add-user>
+
     </div>
 
     <div *ngIf="context === 'details'">
+
       <app-user-details></app-user-details>
+
     </div>
 
   </div>
