@@ -2,26 +2,26 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
+## Cloning repo and installing dependencies
+
+ - Run the command `git clone https://github.com/zmeyers21/datasite.git` to get started
+ - Run `npm i` to install the needed dependencies
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server, and navigate to `http://localhost:4200/`. Or, alternatively, run `npm run open` and a browser should open for you.
+ 
+## Navigating the application
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ - To view the User Store, click on the `Users` tab on the nav bar
+ - You should see a list of registered users on the left of the screen
+ - You have the option to either remove a specific user, view the user details, or there is an `Add User` button on the bottom
+ - The `Remove` button will simply remove the user from the store
+ - `Details` should open the `User Details` panel to the right, where you can view the user details, or remove the user
+ - Removing the user through the details panel should also propogate the update to the registered users list on the left
+ - To add a user, simply click the `Add User` button on the bottom left. This should open the `Add User` panel on the left with a simple button labeled `Create Dummy User`
+ - This button just generates a user with a random `Id` value, and adds it to the list on the left
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `npm run test-once` to execute the unit tests via [Karma](https://karma-runner.github.io).

@@ -4,7 +4,7 @@
     {{ user.firstName }} {{user.lastName}}
   </span>
 
-  <button (click)="details(user.id)">Details</button>
-  <button (click)=remove.emit(user.id)>Remove</button>
+  <button mat-stroked-button (click)="details(user.id)">Details</button>
+  <button mat-stroked-button color="warn" (click)=remove.emit(user.id)>Remove</button>
 
 </div>
