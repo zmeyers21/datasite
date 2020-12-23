@@ -4,6 +4,7 @@ import { RegisteredUser } from 'src/app/core/models/registered-user.model';
 import { DataStoreService } from 'src/app/core/services/data-store.service';
 import { UserService } from 'src/app/core/services/user.service';
 import { mergeMap, take, tap } from 'rxjs/operators';
+import { Membership } from 'src/app/core/models/membership.model';
 
 @Component({
   selector: 'app-user-details',
@@ -14,6 +15,9 @@ export class UserDetailsComponent implements OnInit, OnDestroy {
 
   subscription: Subscription;
   user: RegisteredUser;
+  memberships: Membership[] = [];
+
+  displayedColumns: string[] = ['projectId'];
 
   constructor(public userService: UserService,
               public dataStore: DataStoreService) { }
@@ -24,7 +28,8 @@ export class UserDetailsComponent implements OnInit, OnDestroy {
       this.userService.detailsId.subscribe(id => {
         this.dataStore.registeredUsers$.pipe(
           take(1),
-          tap((users) => this.user = users.find(u => u.id === id))
+          tap((users) => this.user = users.find(u => u.id === id)),
+          tap(() => this.memberships = this.dataStore.getMemberships(id)),
         ).subscribe();
       })
     )

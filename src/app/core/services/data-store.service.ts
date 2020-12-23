@@ -55,6 +55,11 @@ export class DataStoreService {
     this.registeredUsers.push(user);
   }
 
+  getMemberships(userId: string): Membership[] {
+    console.log('all memberships: ', this.memberships);
+    return this.memberships.filter(m => m.userId === userId);
+  }
+
   async fetchData() {
     this.registeredUsers = await this.apiService.getRegisteredUsers().toPromise();
     this.unregisteredUsers = await this.apiService.getUnregisteredUsers().toPromise();
